@@ -15,6 +15,6 @@
 </script>
 
 <Header />
-<main class="h-full w-full">
+<main class="h-full w-full overflow-scroll">
 	<slot />
 </main>
