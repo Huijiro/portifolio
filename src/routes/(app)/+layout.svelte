@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
 	import { browser } from '$app/environment';
+	import Footer from '$lib/footer/footer.svelte';
 
 	if (browser) {
 		if (
@@ -17,4 +18,5 @@
 <Header />
 <main class="h-full w-full overflow-scroll">
 	<slot />
+	<Footer />
 </main>
