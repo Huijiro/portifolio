@@ -95,7 +95,7 @@
 		<ul class="flex flex-wrap md:justify-evenly gap-3 p-4">
 			{#each technologies as { name, icon }}
 				<li class="flex items-center space-x-2">
-					<img src={icon} alt={name} class="w-8 h-8 dark:invert" />
+					<img src={icon} alt={"Icon for " + name} class="w-8 h-8 dark:invert" />
 					<span>{name}</span>
 				</li>
 				<li />
