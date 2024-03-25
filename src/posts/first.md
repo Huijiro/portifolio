@@ -1,7 +1,9 @@
 ---
 title: First blog
+description: A small test blog post in .md
 layout: blog
-date: 25/03/2024
+date: 25-03-2024
+published: true
 ---
 
 Aliquip in commodo nulla ad exercitation irure aute id excepteur. Irure laboris fugiat ut officia veniam laboris dolor qui incididunt incididunt labore occaecat cillum ea. Sint esse incididunt enim ipsum irure eiusmod ipsum elit nostrud eu. Aute laborum Lorem aute officia ad voluptate adipisicing qui esse anim occaecat ut fugiat.
