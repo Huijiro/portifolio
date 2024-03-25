@@ -6,6 +6,7 @@
 	<nav class="flex justify-between">
 		<span class="flex">
 			<LinkButton href="/">Home</LinkButton>
+			<LinkButton href="/blog">Blog</LinkButton>
 		</span>
 		<LinkButton href="/about">About</LinkButton>
 	</nav>
