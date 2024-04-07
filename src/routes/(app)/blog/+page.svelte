@@ -1,12 +1,10 @@
 <script lang="ts">
 	export let data: import('./$types').PageData;
-
-	console.log(data);
 </script>
 
-<ul class="p-4 flex flex-col gap-3">
+<ul class="p-4 h-full flex flex-col gap-3">
 	{#if data.posts.length === 0}
-		<h1 class="italic">Really? No posts? :(</h1>
+		<h1 class="italic text-center">Really? No posts? :(</h1>
 	{/if}
 	{#each data.posts as post}
 		<li class="p-2 border-2">

@@ -3,7 +3,7 @@
 	import A from '$lib/links/A.svelte';
 </script>
 
-<footer class="border-t-2 p-4 flex justify-between">
+<footer class="border-t-2 gap-3 p-4 flex justify-between">
 	<section>
 		<h1 class="font-bold">Socials:</h1>
 		<ul>
@@ -11,7 +11,7 @@
 		</ul>
 	</section>
 	<section>
-		<h1>"Huijiro" all rights reserved 2007-2024</h1>
+		<h1 class="text-center">"Huijiro" all rights reserved 2007-2024</h1>
 	</section>
 	<section>
 		<LinkButton href="mailto:huijirohankei@gmail.com">Contact</LinkButton>
