@@ -34,32 +34,66 @@
 			name: 'Tailwind CSS',
 			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tailwindcss.svg'
 		},
-    {
-      name: 'TypeScript',
-      icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/typescript.svg'
-    },
-    {
-      name: 'Node.js',
-      icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nodedotjs.svg'
-    },
-    {
-      name: "React",
-      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg"
-    },
-    {
-      name: "Next.js",
-      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nextdotjs.svg"
-    },
-    {
-      name: "Java",
-      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/oracle.svg"
-    }
+		{
+			name: 'TypeScript',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/typescript.svg'
+		},
+		{
+			name: 'Node.js',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nodedotjs.svg'
+		},
+		{
+			name: 'React',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg'
+		},
+		{
+			name: 'Next.js',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nextdotjs.svg'
+		},
+		{
+			name: 'Java',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/oracle.svg'
+		},
+		{
+			name: 'PostgreSQL',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/postgresql.svg'
+		},
+		{
+			name: 'MySQL',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg'
+		},
+		{
+			name: 'Prisma',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/prisma.svg'
+		},
+		{
+			name: 'Drizzle',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/drizzle.svg'
+		},
+		{
+			name: 'Express',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/express.svg'
+		},
+		{
+			name: 'NestJS',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nestjs.svg'
+		},
+		{
+			name: 'Spring Boot',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/springboot.svg'
+		},
+		{
+			name: 'Go',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/go.svg'
+		}
 	];
 </script>
 
 <article class="h-full flex items-center justify-center">
 	<div class="text-center">
-		<h1 class="text-4xl md:text-6xl leading-normal">Hello,<br class="md:hidden"/> I'm Gabriel <Inverted>Huijiro</Inverted> Rodrigues</h1>
+		<h1 class="text-4xl md:text-6xl leading-normal">
+			Hello,<br class="md:hidden" /> I'm Gabriel <Inverted>Huijiro</Inverted> Rodrigues
+		</h1>
 		{#key title}
 			<h2 in:blur class="mt-4 text-2xl md:text-4xl grid">
 				{title}
@@ -95,12 +129,15 @@
 		<ul class="flex flex-wrap md:justify-evenly gap-3 p-4">
 			{#each technologies as { name, icon }}
 				<li class="flex items-center space-x-2">
-					<img src={icon} alt={"Icon for " + name} class="w-8 h-8 dark:invert" />
+					<img src={icon} alt={'Icon for ' + name} class="w-8 h-8 dark:invert" />
 					<span>{name}</span>
 				</li>
 				<li />
 			{/each}
 		</ul>
-    <p>But if you work or need work done in another technology feel free to ask, I'm not against learning a new technology for work.</p>
+		<p>
+			But if you work or need work done in another technology feel free to ask, I'm not against
+			learning a new technology for work.
+		</p>
 	</section>
 </article>
