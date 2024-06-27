@@ -85,6 +85,18 @@
 		{
 			name: 'Go',
 			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/go.svg'
+		},
+		{
+			name: 'Docker',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/docker.svg'
+		},
+		{
+			name: 'OpenAPI',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openapiinitiative.svg'
+		},
+		{
+			name: 'Swagger',
+			icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/swagger.svg'
 		}
 	];
 </script>
