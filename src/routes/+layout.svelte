@@ -18,8 +18,8 @@
 	<meta property="og:url" content="https://www.huijiro.com/" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Huijiro's Portifolio" />
-	<meta property="og:description" content="Portifolio for WebDeveloper" />
-	<meta property="og:image" content="" />
+	<meta property="og:description" content="Full stack developer for hire" />
+	<meta property="og:image" content="/thumbnail.webp" />
 
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
