@@ -95,7 +95,7 @@
 			Hello,<br class="md:hidden" /> I'm Gabriel <Inverted>Huijiro</Inverted> Rodrigues
 		</h1>
 		{#key title}
-			<h2 in:blur class="mt-4 text-2xl md:text-4xl grid">
+			<h2 in:blur class="mt-12 text-2xl md:text-4xl grid">
 				{title}
 			</h2>
 		{/key}
