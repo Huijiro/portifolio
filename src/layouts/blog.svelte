@@ -15,7 +15,7 @@
 	<h1 class="text-4xl mb-2">{title}</h1>
 	<h2 class="text-md mb-6">Published on: {date}</h2>
 	<hr />
-	<section class="prose prose-black dark:prose-invert lg:prose-xl p-4">
+	<section class="prose prose-black dark:prose-invert lg:prose-xl p-4 ml-4">
 		<slot />
 	</section>
 </article>
