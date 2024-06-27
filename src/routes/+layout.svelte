@@ -19,15 +19,15 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Huijiro's Portifolio" />
 	<meta property="og:description" content="Full stack developer for hire" />
-	<meta property="og:image" content="/thumbnail.webp" />
+	<meta property="og:image" content="thumbnail.webp" />
 
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="twitter:domain" content="huijiro.com" />
 	<meta property="twitter:url" content="https://www.huijiro.com/" />
 	<meta name="twitter:title" content="Huijiro's Portifolio" />
-	<meta name="twitter:description" content="Portifolio for WebDeveloper" />
-	<meta name="twitter:image" content="" />
+	<meta name="twitter:description" content="Full stack developer for hire" />
+	<meta name="twitter:image" content="thumbnail.webp" />
 </svelte:head>
 
 <div
