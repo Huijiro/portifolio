@@ -12,6 +12,8 @@ I'm not a lawyer, this is not legal advice.
 
 This is a gathering of my thoughts and opinions on the situation in Brazil as a developer with a little more knowledge on law than your average developer.
 
+And this is something I need to explain often when I tell people I work 185 hours a month getting payed less than 5 dollars per hour.
+
 ### A bit of background
 
 Brazil is a country with a high unemployment rate.
