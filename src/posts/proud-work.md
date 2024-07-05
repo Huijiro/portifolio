@@ -3,7 +3,7 @@ title: How working on a Bot for a +18 Discord server made me a better developer.
 description: The lessons I learned working as a Discord Bot Developer for a +18 Server.
 layout: blog
 date: 04-07-2024
-published: false
+published: true
 thumbnail: /proud-work.webp
 ---
 
@@ -13,7 +13,7 @@ Alright, let me explain.
 
 **Yes, I join servers that do +18 content, in this case specific is a VRChat +18 Server.**
 
-There's mostly only one person important to this history, my coworker in the bot system and server owner, Max.
+There's mostly only one person important to this history, my coworker in the Bot system and server owner, Max.
 
 When I joined the server I noticed that the server had a custom Bot that did a bunch of management and other things, to help the owner to manage the (at the time) 5000+ members. Things like banning, giving warnings, keeping track of XP, and some very specific stuff for the server.
 
@@ -21,9 +21,9 @@ Being the nerd I am, I said to the owner if they ever needed help with programmi
 
 To my surprise the owner got in contact with me almost immediately to talk about a big re-write he wanted to do to his Bot.
 
-My work compromised of:
+My work consisted of:
 
-- Rewriting the bot from scratch, the current implementation was done with pure JS and crashed all the time.
+- Rewriting the Bot from scratch, the current implementation was done with pure JS and crashed all the time.
 - Setup a Database system to store the info, at the moment the Bot stored all it's data in JSON.
 - Setup an integration with the VRChat system.
 - Help Max learn better practices of programming, things like typescript and safe programming and Github, which he didn't know until then.
@@ -35,23 +35,23 @@ Me having absolutely no experience in the programming world and being a beginner
 
 So, sorry to expose Max, [I have done it before](https://www.reddit.com/r/programminghorror/comments/1blweat/friend_fixed_the_typescript_error_in_the_code/), and now I will do it again.
 
-In Max defense he became a very good programmer ever since, but... In the begging his lack of knowledge of how to actually do programming "the right way" was lacking more than I thought.
+In Max's defense he became a very good programmer ever since, but... In the beginning his lack of knowledge of how to actually do programming "the right way" was more than I thought.
 
-To keep it short, Max used no versioning software, relying purely on commented code to have old versions of his code, and he had no real Javascript specific knowledge. His work on the previous bot was: "I want to make it work, and I made it work with duct-tape and dreams".
+To keep it short, Max used no versioning software, relying purely on commented code to have old versions of his code, and he had no real modern Javascript knowledge. His work on the previous Bot was more like I want to make it work, and I made it work with duct-tape and dreams.
 
 For me this was a shock because I was too used to always having linters, formatters, and strict testing rules ever since my bootcamp. As well as using Git since day one.
 
-As he showed the me the code of the old bot it was so convoluted with absolutely no sense of structure, order, programming patterns, safety. A mix of "then" and async in the same line, and absolutely no try catches.
+As he showed the me the code of the old Bot it was so convoluted with absolutely no sense of structure, order, programming patterns, safety. A mix of "then" and async in the same line, and barely no try and catches.
 
-We both agreed that it would be easier to re-write the Bot from scratch. And I took some time to try to teach him somethings he was lacking, things like Javascript specific stuff, classes, async programming, Git, and eventually Typescript.
+We both agreed that it would be easier to re-write the Bot from scratch. And I took some time to try to teach him some things he was lacking, things like modern Javascript stuff, classes, async programming, Git, and eventually Typescript.
 
 But we had many discussions, specially with the fact Max was very frustrated with the linter i put on the project and the formatter that forced him to program in a completely different way that he was used to.
 
 In many instances we had to go back to fix ESLint being an absolute ass or something on Prettier making the code "look ugly" in Max's eyes.
 
-In hindsight two things i learned with this headache in the beginning is:
+In hindsight, after all this headache in the beginning, here's two things I learned:
 
-- Take time to train the inexperienced people in the team, they will be frustrated and being nice and available to answer their questions no matter how stupid they are will always make production better.
+- To take time to train the inexperienced people in the team, they will be frustrated and being nice and available to answer their questions no matter how stupid they are will always make production better.
 - Don't use Airbnb ESLint.
 
 After initial frustrations Max learned to overcome his struggles with things like strict typing and error handling, eventually even knowing why they are important. I'm so glad that he had the patience to deal with me trying my best to teach him, while absolute shamming his old code.
@@ -60,7 +60,7 @@ After initial frustrations Max learned to overcome his struggles with things lik
 
 Let's go back a bit, while I was teaching Max, I was working on the API Backend that would provide information to the bot. While the Discord Bot world has usually Databases coupled with the Bot in the same project, we needed to expand to eventually use a Dashboard and other things in the future. So I decided that making a dedicated backend was better.
 
-Being the Javascript Developer I am of course, I tried to invent my own backend service build on top Express. But after learning that Express by itself sucks with Typescript and struggling really hard to do manual validation with Javascript Decorators i decided to drop the idea and go with NestJS instead.
+Of course, being the Javascript Developer that I am, I tried to invent my own backend service build on top Express. But after learning that Express by itself sucks with Typescript and struggling really hard to do manual validation with Javascript Decorators i decided to drop the idea and go with NestJS instead.
 
 **GOD BLESS BATTERIES INCLUDED SOLUTIONS**
 
@@ -80,17 +80,17 @@ So, using the right tool for the job is more of a balance of what you know, what
 
 ### Organize your thoughts and your project, it will help you.
 
-After deciding what I was going to use to make this project, now it's time to plan what is priority. Since I could not just implement all the estimated 100+ endpoints, DTOs for those endpoints and then create a client with all the same things again in both the bot and the frontend. (Thank go I didn't need to do the ladder manually, explained later).
+After deciding what I was going to use to make this project, now it's time to plan what is priority. Since I could not just implement all the estimated 100+ endpoints, DTOs for those endpoints and then create a client with all the same things again in both the Bot and the frontend. (Thank god I didn't need to do the ladder manually, explained later).
 
-I never organized a project before, both for my sake and for Max's sake. We needed to write down everything that needed to be done and any input I needed during programming, be it bugs, changes or extra sudden requests.
+I never organized a project before, both for mine and for Max's sake, we needed to write down everything that needed to be done and any input I needed during programming, be it bugs, changes or extra sudden requests.
 
 I didn't go far to implement SCRUM (ew), but I finally sat down, to actually learn what Github was good for.
 
-Issues, PRs, and Commits, where all things I paid no much mind while programming. Issues where never a thing since no one does Issues for their individual projects, PRs was just a way for me to conveniently merge my branches, and commits where just "did a thing, lol".
+Issues, PRs, and Commits, were all things I didn't pay much mind to while programming. Issues where never a thing since no one does Issues for their individual projects, PRs were just a way for me to conveniently merge my branches, and commits were just "did a thing, lol".
 
 Oh boy, how much I had to learn.
 
-If I was to work in this mostly by myself, I had the job of automating most part of the menial work if possible, automatic deploying, checking for code errors, build failures before merge, and code formatting.
+If I was to work in this mostly by myself, I had the job of automating most part of the menial work if possible, automatic deploying, checking for code errors, build failures before merge and code formatting.
 
 I could guarantee that most of this would done by my part on my local machine, but I had no way to be sure that Max wouldn't push some breaking change to main and ask me to fix it later. (He had the habit in the beginning of having his VSCode root outside the project which disabled ESLint, Prettier and the LSP, and program like that.)
 
@@ -120,9 +120,9 @@ I only needed to document my API properly and I would have a client for free.
 
 A little more work in the direction of making the API better and get a free client, this was the way to go.
 
-I learned swagger (And by extension OpenAPI) and how to generate a client and publish it to another repository on the CI so we could import it and use on both the bot and the webclient.
+I learned swagger (And by extension OpenAPI) and how to generate a client and publish it to another repository on the CI so we could import it and use on both the Bot and the webclient.
 
-After this I had to learn how to setup hard linking with npm packages and how npm packages really work since I needed the bot to build the API Client with it on "npm i".
+After this I had to learn how to setup hard linking with npm packages and how npm packages really work since I needed the Bot to build the API Client with it on "npm i".
 
 I could probably have learned how to publish npm packages and do that instead, but that was too much to handle after almost 9 hours struggling with debugging CI.
 
@@ -134,19 +134,19 @@ But suddenly something happen that shook me deeply. My grandpa which I was very 
 
 This project I had with Max was per my pride very well done, but was no way a job. Max being a recent graduated student payed me 100USD a month on average to work on the project, which for me as a Brazilian was enough to pay for emergencies and help my parents at home.
 
-Me and Max had a verbal agreement. I would work how I think it is best, and for long I wanted to, and I would let him just pay what he thinks it was worth, so no one got wronged. We were just friends trying to do something cool together mostly.
+Me and Max had a verbal agreement. I would work how I think it is best, for as long as I wanted to and I would let him just pay me what he thinks it was worth, so no one got wronged. We were just friends trying to do something cool together mostly.
 
-But I was still frustrated, I was applying for jobs for almost 2 years at this point, getting only silence due the Brazilian market being supersaturated. No one would give me the opportunity since I was still a Junior Developer, and since I would get no "real" jobs I would never graduate from being a Junior.
+But I was still frustrated, I was applying for jobs for almost 2 years at this point, getting only silence due the Brazilian market being supersaturated. No one would give me the opportunity since I was still a Junior Developer, and if I wasn't getting a “real” job, I wouldn't graduate from being a Junior.
 
-University as well, since I live in the country-side it's not very good... Most classes are compromised of very basic stuff, followed by very old technology followed by a lot of classes of teaching, since my major was to be an IT Teacher and not to in CS or Systems. (It was like this because they made an IT course fit on a university that only had Pedagogy Majors)
+Same with University, since I live in the country-side it’s not very good... Most classes are comprised of very basic stuff, followed by very old technology, followed by a lot of classes of teaching, since my major was to be an IT Teacher and not to in CS or Systems. (It was like this because they made an IT course fit into a university that only had Pedagogy Majors)
 
-I liked the idea of being a teacher, but not as much as I just wanted to just be recognized and actually start my career. I was wondering if I was even good at what I was doing and if I was even gonna be anything in life eventually. My impostor syndrome was at it's worst and I was about to give up on everything, become dead inside and go work as a cashier getting payed 21 cents an hour here in my town till the day I died.
+I liked the idea of being a teacher, but not as much as I just wanted to be recognized and actually start my programming career. I wondered if I was even good at what I was doing and if I was even gonna be anything in life eventually. My impostor syndrome was at its worst and I was about to give up on everything, become dead inside and go work as a cashier getting payed 21 cents an hour here in my town till the day I die.
 
-So per sheer will, since then, my code has been guilt driven developed. I still feel the pain of losing my grandpa and I still feel locked in this small town, with everyone around me saying I am a excellent developer, but I still live in dad's office. Getting payed less than 4 dollars a hour to write a Angular App as my main job. While having all the baggage of knowing all the things most recruiters keep saying they want on their companies with no opportunity to show any of that. And still considered a junior developer.
+So per sheer will, since then, the development of my code has been guilt driven. I still feel the pain of losing my grandpa and I still feel locked in this small town, with everyone around me saying I am an excellent developer, but I still live in dad's office. Getting payed less than 4 dollars an hour to write an Angular App as my main job. While having all the baggage of knowing all the things most recruiters keep saying they want, with no opportunity to show any of it, all while still being considered a junior developer.
 
-But, let the ramblings of a sadden developer tire you no longer. If I ever get to a better place in my life I want the state of my mental to be a sign that even if you're facing shitty situations, and you're in bottom low of motivation, **KEEP TYPING**. All you get being somber and depressed is wasted time. If I drown in my sadness, I will drown struggling.
+But, let the ramblings of a sadden developer tire you no longer. If I ever get to a better place in my life I want the state of my mental to be a sign that, even if you're facing shitty situations, and you're in bottom low of motivation, **KEEP TYPING**. All you get being somber and depressed is wasted time. If I drown in my sadness, I will drown struggling.
 
-I have still more to say, about the absolutely shit storm that is the VRChat integration. How it's developers keep ignoring their high skill community in favor of making their own solutions to problems that were already solved long ago. How I learned to scrape a WebAPI by exploring it. But with the objective of making this post not as long, I will leave as it is for now.
+I have still more to say, about the absolutely shit storm that is the VRChat integration. How its developers keep ignoring their high skilled communities in favor of making their own solutions to problems that were already solved long ago. How I learned to scrape a WebAPI by exploring it. But with the objective of making this post not as long, I will leave as it is for now.
 
 ### I am very much proud of the work I did on that +18 Discord Bot.
 
