@@ -2,6 +2,7 @@
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-nocheck
 	export let title;
+  export let description;
 	export let date;
 	export let thumbnail;
 </script>
@@ -10,8 +11,9 @@
 	<title>{title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
 	<meta property="og:image" content={thumbnail ? thumbnail : '/thumbnail.webp'} />
-	<meta name="twitter:card" content={thumbnail ? thumbnail : '/thumbnail.webp'} />
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <article class="p-4">
