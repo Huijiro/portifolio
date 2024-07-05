@@ -9,11 +9,12 @@
 
 <svelte:head>
 	<title>{title}</title>
+	<meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@huijirohankei" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
 	<meta property="og:image" content={thumbnail ? thumbnail : '/thumbnail.webp'} />
-	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <article class="p-4">
