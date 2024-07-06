@@ -14,7 +14,7 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-	<meta property="og:image" content={thumbnail ? thumbnail : '/thumbnail.webp'} />
+	<meta property="og:image" content={thumbnail ? 'https://www.huijiro.com/' + thumbnail : 'https://www.huijiro.com/thumbnail.webp'} />
 </svelte:head>
 
 <article class="p-4">
