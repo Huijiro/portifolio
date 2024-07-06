@@ -130,7 +130,7 @@ I could probably have learned how to publish npm packages and do that instead, b
 
 After all this setup, I was working on and off the project on my free time for almost 6 months.
 
-But suddenly something happen that shook me deeply. My grandpa which I was very close to died, and I was really frustrated because I was still jobless, not graduated in University and poor. And I wanted to show to him, me being successful before he passed out, because he always worried about me.
+But suddenly something happen that shook me deeply. My grandpa which I was very close to died, and I was really frustrated because I was still jobless, not graduated in University and poor. And I wanted to show to him, myself being successful before he passed out, because he always worried about me.
 
 This project I had with Max was per my pride very well done, but was no way a job. Max being a recent graduated student payed me 100USD a month on average to work on the project, which for me as a Brazilian was enough to pay for emergencies and help my parents at home.
 
@@ -138,16 +138,20 @@ Me and Max had a verbal agreement. I would work how I think it is best, for as l
 
 But I was still frustrated, I was applying for jobs for almost 2 years at this point, getting only silence due the Brazilian market being supersaturated. No one would give me the opportunity since I was still a Junior Developer, and if I wasn't getting a “real” job, I wouldn't graduate from being a Junior.
 
-Same with University, since I live in the country-side it’s not very good... Most classes are comprised of very basic stuff, followed by very old technology, followed by a lot of classes of teaching, since my major was to be an IT Teacher and not to in CS or Systems. (It was like this because they made an IT course fit into a university that only had Pedagogy Majors)
-
-I liked the idea of being a teacher, but not as much as I just wanted to be recognized and actually start my programming career. I wondered if I was even good at what I was doing and if I was even gonna be anything in life eventually. My impostor syndrome was at its worst and I was about to give up on everything, become dead inside and go work as a cashier getting payed 21 cents an hour here in my town till the day I die.
-
-So per sheer will, since then, the development of my code has been guilt driven. I still feel the pain of losing my grandpa and I still feel locked in this small town, with everyone around me saying I am an excellent developer, but I still live in dad's office. Getting payed less than 4 dollars an hour to write an Angular App as my main job. While having all the baggage of knowing all the things most recruiters keep saying they want, with no opportunity to show any of it, all while still being considered a junior developer.
+So per sheer will, since then, the development of my code has been guilt driven. I still feel the pain of losing my grandpa and I still feel locked in this small town, with everyone around me saying I am an excellent developer, but I still live in dad's office. Getting payed less than 4 dollars an hour to write an Angular App as my main job. While having all the baggage of knowing all the things most recruiters keep posting in Linkedin they want, with no opportunity to show any of it, all while still being considered a junior developer.
 
 But, let the ramblings of a sadden developer tire you no longer. If I ever get to a better place in my life I want the state of my mental to be a sign that, even if you're facing shitty situations, and you're in bottom low of motivation, **KEEP TYPING**. All you get being somber and depressed is wasted time. If I drown in my sadness, I will drown struggling.
 
-I have still more to say, about the absolutely shit storm that is the VRChat integration. How its developers keep ignoring their high skilled communities in favor of making their own solutions to problems that were already solved long ago. How I learned to scrape a WebAPI by exploring it. But with the objective of making this post not as long, I will leave as it is for now.
+No matter how my mental state has been, I always tried to not have it affect the quality of my work. I could have half assed any time, take a day off with the excuse of feeling bad to stay in bed all day looking at the ceiling, but I always tried to keep it in check.
+
+I will give this as a personal advice, if you feel like nothing is meaningful and you're facing the struggles of being a modern junior dev, **KEEP TYPING**, it eventually will get better.
+
+Recently I have been hanging out more with the programming community (Thanks to Theo for being wholesome, and for Primeagen for roasting me on stream), trying to get more and more motivation. 
 
 ### I am very much proud of the work I did on that +18 Discord Bot.
 
+I have still more to say, about the absolutely shit storm that is the VRChat integration. How its developers keep ignoring their high skilled communities in favor of making their own solutions to problems that were already solved long ago. How I learned to scrape a WebAPI by exploring it. But with the objective of making this post not as long, I will leave as it is for now.
+
 I learned so much, so many practices that made me more confident as a developer. With this project I went from someone only capable of doing React SPAs to someone I can proudly call fullstack, even if still a Junior.
+
+And I'm still learning more and more everyday, recently I've been working with Golang and trying to work with VR related stuff for the web. And I hope to have updates for these things again in the blog in the future.
