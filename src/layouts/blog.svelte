@@ -11,6 +11,9 @@
 	<title>{title}</title>
 	<meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@huijirohankei" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={thumbnail ? 'https://www.huijiro.com/' + thumbnail : 'https://www.huijiro.com/thumbnail.webp'} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
