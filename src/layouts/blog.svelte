@@ -1,23 +1,36 @@
-<script>
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-nocheck
-	export let title;
-  export let description;
-	export let date;
-	export let thumbnail;
+<script lang="ts">
+	interface Props {
+		title: string;
+		description: string;
+		date: string;
+		thumbnail: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { title, description, date, thumbnail, children }: Props = $props();
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 	<meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:creator" content="@huijirohankei" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={thumbnail ? 'https://www.huijiro.com/' + thumbnail : 'https://www.huijiro.com/thumbnail.webp'} />
+	<meta name="twitter:creator" content="@huijirohankei" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta
+		name="twitter:image"
+		content={thumbnail
+			? 'https://www.huijiro.com/' + thumbnail
+			: 'https://www.huijiro.com/thumbnail.webp'}
+	/>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-	<meta property="og:image" content={thumbnail ? 'https://www.huijiro.com/' + thumbnail : 'https://www.huijiro.com/thumbnail.webp'} />
+	<meta property="og:description" content={description} />
+	<meta
+		property="og:image"
+		content={thumbnail
+			? 'https://www.huijiro.com/' + thumbnail
+			: 'https://www.huijiro.com/thumbnail.webp'}
+	/>
 </svelte:head>
 
 <article class="p-4">
@@ -26,7 +39,7 @@
 	<hr />
 	<div class="flex justify-center">
 		<section class="prose prose-black dark:prose-invert lg:prose-xl p-4 ml-4">
-			<slot />
+			{@render children?.()}
 		</section>
 	</div>
 </article>

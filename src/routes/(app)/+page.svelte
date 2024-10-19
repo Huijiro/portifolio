@@ -10,7 +10,7 @@
 		'Svelte Enthusiast',
 		'Tailwind CSS Fan'
 	];
-	let title: string = titles[0];
+	let title: string = $state(titles[0]);
 
 	if (browser) {
 		const interval = setInterval(() => {
@@ -172,7 +172,7 @@
 					<img src={icon} alt={'Icon for ' + name} class="w-8 h-8 dark:invert" />
 					<span>{name}</span>
 				</li>
-				<li />
+				<li></li>
 			{/each}
 		</ul>
 		<p>

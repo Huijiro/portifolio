@@ -2,6 +2,11 @@
 	import Header from '$lib/header/Header.svelte';
 	import { browser } from '$app/environment';
 	import Footer from '$lib/footer/footer.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	if (browser) {
 		if (
@@ -17,6 +22,6 @@
 
 <Header />
 <main class="h-full w-full overflow-scroll">
-	<slot />
+	{@render children?.()}
 	<Footer />
 </main>

@@ -1,6 +1,10 @@
 <script lang="ts">
 	import './code.css';
-	export let data;
+	interface Props {
+		data: import('./$types').PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
-<svelte:component this={data.content} />
+<data.content />

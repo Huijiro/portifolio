@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let data: import('./$types').PageData;
+	interface Props {
+		data: import('./$types').PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <ul class="p-4 h-full flex flex-col gap-3">
