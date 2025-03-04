@@ -1,14 +1,14 @@
 type Post = {
 	title: string;
 	date: string;
-    description: string;
+	description: string;
 	published: string;
 	slug: string;
 };
 
 export const load: import('./$types').PageLoad = async () => {
 	const posts: Post[] = [];
-	const paths = import.meta.glob('/src/posts/*.md', { eager: true });
+	const paths = import.meta.glob('../../../posts/*.md', { eager: true });
 
 	for (const path in paths) {
 		const file = paths[path];
@@ -20,6 +20,8 @@ export const load: import('./$types').PageLoad = async () => {
 			post.published && posts.push(post);
 		}
 	}
+
+	if (posts.length === 0) return { posts: [] };
 
 	posts.toSorted(
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
