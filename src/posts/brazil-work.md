@@ -3,7 +3,7 @@ title: How the Brazilian IT industry is gaslighting it's workers to give up thei
 description: With high unemployment rates and a lack of job security, many Brazilians are forced to sign very illegal contracts and give up on their rights as workers.
 layout: blog
 date: 27-06-2024
-published: false
+published: true
 ---
 
 ### Warning
