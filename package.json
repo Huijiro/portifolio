@@ -2,6 +2,9 @@
 	"name": "portifolio",
 	"version": "0.0.1",
 	"private": true,
+	"engines": {
+		"node": ">=24.0.2"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -12,27 +15,27 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.2.5",
-		"@sveltejs/kit": "^2.6.1",
-		"@sveltejs/vite-plugin-svelte": "^4.0.0",
-		"@tailwindcss/typography": "^0.5.15",
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/kit": "^2.25.1",
+		"@sveltejs/vite-plugin-svelte": "^4.0.4",
+		"@tailwindcss/typography": "^0.5.16",
 		"@types/eslint": "^8.56.12",
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
 		"@typescript-eslint/parser": "^7.18.0",
-		"autoprefixer": "^10.4.20",
+		"autoprefixer": "^10.4.21",
 		"eslint": "^8.57.1",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.45.1",
+		"eslint-config-prettier": "^9.1.2",
+		"eslint-plugin-svelte": "^2.46.1",
 		"mdsvex": "^0.11.2",
-		"postcss": "^8.4.47",
-		"prettier": "^3.3.3",
-		"prettier-plugin-svelte": "^3.2.7",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
-		"tailwindcss": "^3.4.13",
-		"tslib": "^2.7.0",
-		"typescript": "^5.6.2",
-		"vite": "^5.4.8"
+		"postcss": "^8.5.6",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"svelte": "^5.36.8",
+		"svelte-check": "^4.3.0",
+		"tailwindcss": "^3.4.17",
+		"tslib": "^2.8.1",
+		"typescript": "^5.8.3",
+		"vite": "^5.4.19"
 	},
 	"type": "module",
 	"packageManager": "pnpm@9.5.0-beta.0+sha512.c2e60e7ed04e459591c982f2760cd8f7d1f48fe1ca4d46ccbbf8377df1eb2d077ace1e9d334b06250dddf23c03b4562858f77992b9a3bb4a93355aefd173df32"
