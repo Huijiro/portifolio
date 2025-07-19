@@ -142,7 +142,7 @@
 	</div>
 </article>
 
-<article class="p-4">
+<article class="p-4 mx-[8%]">
 	<h1 class="text-4xl font-bold">Full Stack is not Stack Developer</h1>
 	<section class="text-lg p-4">
 		<p>
@@ -162,7 +162,7 @@
 	</section>
 </article>
 
-<article class="p-4">
+<article class="p-4 mx-[8%] mb-16">
 	<h1 class="text-4xl font-bold">Technologies are supposed to solve problems.</h1>
 	<section class="text-lg p-4">
 		<p>I have experience working with a variety of technologies, including:</p>
