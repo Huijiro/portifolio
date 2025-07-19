@@ -2,24 +2,29 @@
 	import { browser } from '$app/environment';
 	import Inverted from '$lib/div/Inverted.svelte';
 	import { onDestroy } from 'svelte';
-	import { blur } from 'svelte/transition';
 
 	const titles: string[] = [
 		'Full Stack Programmer',
-		'Forever Junior',
 		'Svelte Enthusiast',
-		'Tailwind CSS Fan'
+		'Tailwind CSS Fan',
+		'SvelteKit Appreciatior',
+		'AI Tolerant',
+		'MMO Player',
+		'Ex VTuber',
+		'VR Lover'
 	];
-	let title: string = $state(titles[0]);
+	let i: number = $state(0);
 
 	if (browser) {
-		const interval = setInterval(() => {
-			title = titles[Math.floor(Math.random() * titles.length)];
-		}, 3000);
+		setTimeout(() => {
+			const interval = setInterval(() => {
+				i = (i + 1) % titles.length;
+			}, 3000);
 
-		onDestroy(() => {
-			clearInterval(interval);
-		});
+			onDestroy(() => {
+				clearInterval(interval);
+			});
+		}, 9000);
 	}
 
 	const technologies: {
@@ -134,9 +139,9 @@
 		<h1 class="text-4xl md:text-6xl leading-normal">
 			Hello,<br class="md:hidden" /> I'm Gabriel <Inverted>Huijiro</Inverted> Rodrigues
 		</h1>
-		{#key title}
-			<h2 in:blur class="mt-12 text-2xl md:text-4xl grid">
-				{title}
+		{#key i}
+			<h2 class="mt-12 text-2xl md:text-4xl grid">
+				{titles[i]}
 			</h2>
 		{/key}
 	</div>
