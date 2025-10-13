@@ -2,7 +2,7 @@
 title: Your average programmer standards are low
 description: It's impressive how people just seddle with "it just works"...
 layout: blog
-date: 11-02-2025
+date: 2025-02-11
 published: true
 ---
 

@@ -35,7 +35,7 @@
 
 <article class="p-4">
 	<h1 class="text-4xl mb-2">{title}</h1>
-	<h2 class="text-md mb-6">Published on: {date}</h2>
+	<h2 class="text-md mb-6">Published on: {new Date(date).toLocaleDateString()}</h2>
 	<hr />
 	<div class="flex justify-center">
 		<section class="prose prose-black dark:prose-invert lg:prose-xl p-4 ml-4">
