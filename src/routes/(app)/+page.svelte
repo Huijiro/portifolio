@@ -7,7 +7,8 @@
 		'Full Stack Programmer',
 		'Svelte Enthusiast',
 		'Tailwind CSS Fan',
-		'SvelteKit Appreciatior',
+		'Bug Fixer',
+		'Bug Maker',
 		'Cloud Engineer'
 	];
 	let i: number = $state(0);
