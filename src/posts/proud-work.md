@@ -3,7 +3,7 @@ title: How working on a Bot for a +18 Discord server made me a better developer.
 description: The lessons I learned working as a Discord Bot Developer for a +18 Server.
 layout: blog
 date: 04-07-2024
-published: true
+published: false
 thumbnail: /proud-work.webp
 ---
 
@@ -146,7 +146,7 @@ No matter how my mental state has been, I always tried to not have it affect the
 
 I will give this as a personal advice, if you feel like nothing is meaningful and you're facing the struggles of being a modern junior dev, **KEEP TYPING**, it eventually will get better.
 
-Recently I have been hanging out more with the programming community (Thanks to Theo for being wholesome, and for Primeagen for roasting me on stream), trying to get more and more motivation. 
+Recently I have been hanging out more with the programming community (Thanks to Theo for being wholesome, and for Primeagen for roasting me on stream), trying to get more and more motivation.
 
 ### I am very much proud of the work I did on that +18 Discord Bot.
 
