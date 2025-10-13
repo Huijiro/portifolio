@@ -1,30 +1,29 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import Inverted from '$lib/div/Inverted.svelte';
-	import { onDestroy } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 
 	const titles: string[] = [
 		'Full Stack Programmer',
 		'Svelte Enthusiast',
 		'Tailwind CSS Fan',
 		'SvelteKit Appreciatior',
-		'AI Tolerant',
-		'MMO Player',
-		'Ex VTuber',
-		'VR Lover'
+		'Cloud Engineer'
 	];
 	let i: number = $state(0);
 
 	if (browser) {
-		setTimeout(() => {
-			const interval = setInterval(() => {
-				i = (i + 1) % titles.length;
-			}, 3000);
-
+		onMount(() => {
+			let interval: number;
+			setTimeout(() => {
+				interval = setInterval(() => {
+					i = (i + 1) % titles.length;
+				}, 3000);
+			}, 9000);
 			onDestroy(() => {
-				clearInterval(interval);
+				if (interval) clearInterval(interval);
 			});
-		}, 9000);
+		});
 	}
 
 	const technologies: {

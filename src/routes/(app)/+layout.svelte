@@ -3,25 +3,24 @@
 	import { browser } from '$app/environment';
 	import Footer from '$lib/footer/footer.svelte';
 	interface Props {
-		children?: import('svelte').Snippet;
+		children: import('svelte').Snippet;
 	}
 
 	let { children }: Props = $props();
 
 	if (browser) {
-		if (
+		document.documentElement.classList.toggle(
+			'dark',
 			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+		);
 	}
 </script>
 
 <Header />
-<main class="h-full w-full overflow-scroll">
-	{@render children?.()}
+<main class="h-screen w-full flex flex-col text-primary bg-paper overflow-scroll">
+	<main class="h-full overflow-auto">
+		{@render children()}
+	</main>
 	<Footer />
 </main>

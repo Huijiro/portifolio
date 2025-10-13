@@ -6,6 +6,6 @@
 	let { children }: Props = $props();
 </script>
 
-<span class="dark:bg-white dark:text-black bg-black text-white p-2">
+<span class="bg-[var(--primary)] !text-[var(--paper)]">
 	{@render children?.()}
 </span>
